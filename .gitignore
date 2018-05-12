@@ -1,0 +1,10 @@
+/node_modules
+/logs
+config.js
+Client/.DS_Store
+Client/css/.DS_Store
+Client/html/.DS_Store
+Client/html/partials/.DS_Store
+Client/images/.DS_Store
+Client/js/.DS_Store
+/.idea

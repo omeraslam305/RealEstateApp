@@ -1,0 +1,153 @@
+<div class="login-right" style="padding:0px">
+	<h3>Fill Listing Details</h3>
+	<div class="login-top">
+		<div class="error">
+			<span id="error-msg" style="color: red;"></span>
+		</div>
+		<div class="form-info">
+			<div class="row">
+				<div class="col-sm-10">
+					<div class="form-label">Title</div>
+					<input id="listing-title" type="text" required="">
+				</div>
+				<div class="col-sm-2 ad-status">
+					<div class="form-label">Status</div>
+					<select id="listing-status" class="in-drop form-control">
+						<option value="1">Available</option>
+						<option value="2">Sold Out</option>
+					</select>
+					
+				</div>
+			</div>
+			
+			<div>
+				<div class="form-label">Description</div>
+				<textarea id="listing-description" style="border: 1px solid #dfdfdf" rows="5" cols="35"></textarea>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-label">Bed Rooms</div>
+					<input id="listing-noOfBeds" type="number" required="" >
+				</div>
+				<div class="col-md-4">
+					<div class="form-label">Bath Rooms</div>
+					<input id="listing-noOfBaths" type="number" required="" >
+				</div>
+				<div class="col-md-4">
+					<div class="form-label">Kitchen </div>
+					<input id="listing-kitchen" type="number" required="" >
+				</div>
+				
+			</div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="form-label">Living Rooms</div>
+					<input id="listing-noOfLiving" type="number" required="" >
+				</div>
+
+				<div class="col-md-3">
+					<div class="form-label">Area(Square Feets)</div>
+					<input id="listing-area" type="number" required="" >
+				</div>
+				<div class="col-md-3">
+					<div class="form-label">Lot Area</div>
+					<input id="listing-lotArea" type="number" required="" >
+				</div>
+				
+				<div class="col-md-3">
+					<div class="form-label">Number of Floors</div>
+					<input id="listing-noOfFloors" type="number" required="" >
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					
+					<div class="form-label">Parking</div>
+					<select id="listing-parking" class="in-drop form-control">
+						<option value="">Parking</option>
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<div class="form-label">Ad Type</div>
+					<select id="listing-type" class="in-drop form-control">
+						<option value="">Ad Type</option>
+						<option value="2">Buy</option>
+						<option value="1">Rental</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<div class="form-label">Property Category</div>
+					<select id="listing-category" class="in-drop form-control">
+						<option value="">Category</option>
+						<option value="1">House</option>
+						<option value="2">Flat</option>
+					</select>
+				</div>
+				
+				<div class="col-md-3">
+					<div class="form-label">Price</div>
+					<input id="listing-price" type="number" required="" >
+				</div>
+				
+			</div>
+			<div>
+				<div class="form-label">Address</div>
+				<input id="listing-door" type="text" required="" >
+			</div>
+			
+			<div class="row">
+	            <div class="col-sm-8">
+	            	<div class="form-label">Please Select Address</div>
+	                <input type="text" class="form-control" id="us3-address" />
+	            </div>
+	            <div class="col-sm-2">
+	            	<div class="form-label">Latitude</div>
+	            	<input type="text" class="form-control" disabled="true" id="listing-latitude" />
+	            </div>
+	            <div class="col-sm-2">
+	            	<div class="form-label">Longitude</div>
+	            	<input type="text" class="form-control" disabled="true" id="listing-longitude" />
+	            </div>
+	        </div>
+			
+			<div class="form-label">City</div>
+			<input id="listing-city" type="text" required="" >
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-label">State</div>
+					<input id="listing-state" type="text" required="" >
+				</div>
+				<div class="col-md-4">
+					<div class="form-label">Country</div>
+					<input id="listing-country" type="email" required="" >
+				</div>
+				<div class="col-md-4">
+					<div class="form-label">Zip</div>
+					<input id="listing-zip" type="number" required="" >
+				</div>
+				
+			</div>
+			<div class="uploadfile">
+				<div>Select one or multiple files at a time.</div>
+				<input type="file" id="listing-fileUpload" multiple onchange="checkUploadedFile()"/>
+			</div>
+			<div>
+				<div id="listing-images"></div>
+			</div><br>
+			<div id="listing-map" style="width: 100%; height: 230px;"></div>
+        	<div class="clearfix"></div>
+			
+			<div style="width: 100%;text-align: center;">
+				<a href="javascript:" class="hvr-sweep-to-right more listing-new-btn">SUBMIT</a> 
+				<a href="javascript:" class="hvr-sweep-to-right more listing-update-btn">UPDATE</a> 
+				
+			</div>
+			<br>
+		</div>	
+	</div>
+</div>

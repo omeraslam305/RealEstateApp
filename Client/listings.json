@@ -1,0 +1,51 @@
+[
+	{	
+		"id":1,
+		"name": "2BHK",
+		"image": "/images/pc4.jpg",
+		"price": "40,000$",
+		"description": "Lorem ipsum"
+	},
+	{
+		"id":2,
+		"name": "2BHK",
+		"image": "/images/pc5.jpg",
+		"price": "50,000$",
+		"description": "Lorem ipsum"
+	},
+	{
+		"id":3,
+		"name": "1BHK",
+		"image": "/images/pc1.jpg",
+		"price": "40,000$",
+		"description": "Lorem ipsum"
+	},
+	{
+		"id":4,
+		"name": "2BHK",
+		"image": "/images/pc1.jpg",
+		"price": "40,023$",
+		"description": "Lorem ipsum"
+	},
+	{
+		"id":5,
+		"name": "3BHK",
+		"image": "/images/pc2.jpg",
+		"price": "20,000$",
+		"description": "Lorem ipsum"
+	},
+	{
+		"id":6,
+		"name": "5BHK",
+		"image": "/images/pc3.jpg",
+		"price": "40,000$",
+		"description": "Lorem ipsum"
+	},
+	{
+		"id":7,
+		"name": "2BHK",
+		"image": "/images/pc4.jpg",
+		"price": "40,000$",
+		"description": "Lorem ipsum"
+	}
+]

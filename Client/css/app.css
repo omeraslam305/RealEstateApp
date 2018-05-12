@@ -1,0 +1,852 @@
+.searchBox{
+  width: 70%;
+    padding: 11px;
+    font-size: large;
+    /*border: solid 2px #f44336;*/
+    display: inline-block !important;
+
+}
+.searcBtn{
+    height: 35px;
+    padding: 0px 16px;
+    background-color: #f44336;
+    color: #FFF;
+}
+
+.home-caption{
+  
+    left: 37%;
+}
+.home-caption h3{
+  color: #fff;
+  font-size: 3em;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Montserrat-Regular';
+    padding: 0 0 0.3em;
+}
+.home-caption h3 span{
+  border-bottom: 7px solid #f44336;
+}
+.home-caption p{
+  color: #fff;
+  font-size: 1.7em;
+  margin: 0.5em 0em 0;
+}
+
+.caption{
+  position: absolute;
+  top: 43%;
+    left: 13%;
+}
+.caption h3{
+  color: #fff;
+  font-size: 3em;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Montserrat-Regular';
+    padding: 0 0 0.3em;
+}
+.caption h3 span{
+  border-bottom: 7px solid #f44336;
+}
+.caption p{
+  color: #fff;
+  font-size: 1.7em;
+  margin: 0.5em 0em 0;
+}
+
+.listing-title, .listing-image, .edit-listing, .delete-listing{
+  cursor: pointer;
+}
+
+.searchIdx{
+  border: 1px solid black;
+}
+
+.realEstateAd{
+ /* border: 1px solid lightgrey;*/
+ box-shadow: 1px 1px 1px 1px lightgrey;
+  margin:15px 0px;
+
+}
+
+.adImage{
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.listing-image{
+  width: 100%;
+    height: 185px;
+    /* width: 185px; */
+    min-height: 195px
+}
+.adCardDetails{
+  font-size: 13px;
+  
+}
+.adCardsAttribute{
+  color: grey;
+  padding: 0px 10px 0px 11px !important;
+}
+.adCardsValue{
+  color: darkgrey;
+  padding: 0px 10px 0px 10px !important;
+}
+.realEstateProperties{
+  display: inline-flex;
+   margin:0px !important;
+   padding:0px !important;
+}
+.divider{
+  margin-top: 5px;
+    margin-bottom: 8px;
+    margin-left: -5px;
+}
+.companyPic{
+  width: 140px;
+  height:140px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 1.5px solid #f44336;
+}
+.companyName{
+  color: grey;
+}
+.companyDescription{
+  color:darkgrey;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: .6s ease-in-out left;
+       -o-transition: .6s ease-in-out left;
+          transition: .6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+         -o-transition:      -o-transform .6s ease-in-out;
+            transition:         transform .6s ease-in-out;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+    left: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+    left: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  .carousel-inner > .item.next.left,
+  .carousel-inner > .item.prev.right,
+  .carousel-inner > .item.active {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  opacity: .9;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  font-family: serif;
+  line-height: 1;
+}
+.carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.carousel-control .icon-next:before {
+  content: '\203a';
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #fff;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    margin-left: -15px;
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+    margin-right: -15px;
+  }
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+  }
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}
+.agentInfo-icon{
+  color:grey;
+}
+.agentInfo-message{
+  padding: 10px;
+  color: #a3a3a3;
+  font-size: smaller;
+}
+.refer-details{
+  padding: 5px 0px;
+  
+}
+.refer-property{
+  margin-left: 10px;
+  font-size: smaller;
+}
+.listing-info-inputs{
+  padding: 5px;
+  resize: none;
+  border: 0.5px solid #dfdfdf;
+}
+.agentInfo-details{
+  padding:4px 0px;
+  color: #a3a3a3;
+  font-size: smaller;
+}
+.carousel .item {
+  height: 400px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+}
+
+#toaster {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 2%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+#toaster.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+#profile-name{
+    /*margin-top: 3em;
+    
+    */
+    margin-left: 2.5em;
+    text-transform: capitalize;
+    -webkit-text-stroke: .3px lightgrey;
+    font-size: x-large;
+    color: white;
+    font-size: 20px;
+    height: 70px;
+}
+
+.profile-picture{
+  height: 160px;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-top: -120px;
+    background: white;
+    
+    width: 165px;
+}
+
+.new-listing-form{
+  display: none;
+}
+
+.edit-profile-form{
+  display: none;
+}
+
+.my-profile-details{
+  display: none;
+}
+.profile-tabs{
+  padding:10px;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.active-tab{
+  background: #f44336;
+}
+
+
+/* Chat containers */
+.container-msg {
+    
+    padding: 8px;
+    cursor: pointer;
+}
+
+.container-msg-users{
+border-bottom: 1px solid #dedede;
+}
+
+/* Darker chat container */
+
+/* Clear floats */
+.container-msg::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+.container-msg img {
+    float: left;
+    max-width: 40px;
+    width:38px;
+    height:38px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+.container-msg img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+    color: #aaa;
+    font-size: 11px;
+    color: #333;
+    text-align: right;
+    margin-top:4px;
+}
+
+.chatDateTime{
+    color: grey;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.chatDateTimeReceiver{
+    color: #FFF;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+/* Style time text */
+.time-left {
+    /*float: left;*/
+    color: #999;
+    font-size: 11px;
+    color: #333;
+}
+
+.msg-list-heading{
+    text-align: -webkit-center;
+    padding-top: 6px;
+    border-bottom: 1.8px solid #CCC;
+}
+
+.msg-list-container{
+  padding: 0px;
+  overflow: auto;
+  height: 580px;
+  width: 100%;
+}
+
+.message-right{
+    padding: 1em 1em;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.msg-name-heading{
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.msg-text{
+  font-size: 13px;
+  color:grey;
+}
+
+.msg-thread{
+  height: 80%;
+}
+
+.msg-box{
+  height: 20%;
+  border-top: 1.8px solid #CCC;
+}
+
+div.wrap {
+    display: table;
+}
+
+div.cell {
+    /*display: table-cell;*/
+    vertical-align: bottom;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.container-msg-thread {
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.msg-align{
+  text-align: -webkit-right;
+}
+
+.myprofile-content{
+  /*padding-top:20px;*/
+}
+
+.roundEdgedLabels{
+  font-size: 11px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px;
+    margin-top:3px;
+}
+
+.realEstateAgent{
+  
+  box-shadow: 1px 1px 1px 1px lightgrey;
+  margin:15px 0px;
+}
+
+.agent-title, .agent-image{
+  cursor: pointer;
+}
+
+.agentImage{
+  text-align: center;
+}
+
+.agent-image{
+      padding: 2px;
+    border: 2px solid #f44336;
+    border-radius: 50%;
+      width: 175px;
+    margin-top: 12px;
+    height: 175px;
+}
+.agentCardDetails{
+  font-size: 11.5px;
+  
+}
+.agentCardsAttribute{
+  color: grey;
+  padding: 0px 10px 0px 11px !important;
+}
+.agentCardsValue{
+  color: darkgrey;
+  padding: 0px 10px 0px 10px !important;
+}
+.realEstateAgents{
+  display: inline-flex;
+}
+
+.textOverflow{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding:0px !important;
+  text-transform: capitalize;
+}
+
+.listing-title{
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.listing-details{
+  color:grey;
+  font-size: 13px;
+}
+
+.message-container{
+  height: 75vh;
+  border: 1px solid lightgrey;
+  margin:10px;
+  box-shadow: 1px 1px 1px 1px lightgrey;
+}
+
+.message-rightCol{
+  height: 75vh;
+   padding: 0px;
+}
+
+.message-leftCol{
+  border-right: 1px solid lightgrey;
+  height: 75vh;
+  padding: 0px;
+  
+}
+
+.leftCol-header, .rightCol-header{
+  padding: 5px;
+  border-bottom: 1px solid lightgrey;
+  text-align: center;
+}
+
+.user-messages{
+  height: 66vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.user-names{
+  height:71vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.input-message{
+  border-top: 1px solid lightgrey;
+  margin: 0px;
+  padding-top:6px;
+  
+  bottom: 10px;
+  width: 100%;
+  display: none;
+  background: white;
+ /*  padding-top:8px;
+  height: 10vh;
+  overflow: scroll;*/
+}
+
+.container-msg-users:hover{
+  background: lightgrey;
+}
+
+.receiver-message{
+  padding:4px 12px;
+  width: fit-content;
+  background: #f44336;
+  border-radius: 0px 14px 0px 14px;
+  color: #FFF;
+}
+
+.sender-message{
+  float: right;
+  background: #c5d2cd7d;
+  width: fit-content;
+  padding: 4px 12px;
+   border-radius: 14px 0px 14px 0px;
+  
+}
+
+.conversation-message{
+  font-size: smaller;
+}
+.conversation-image{
+    float: left;
+    max-width: 40px;
+    width:38px;
+    height:38px;
+    border-radius: 50%;
+}
+
+.abdul-leftDiv{
+    text-align: center;
+  }
+  .abdul-personalDetails{
+    padding: 3px;
+  }
+  .title{
+    font-weight: bold;
+  }
+  .abdul-sectionBars{
+    padding: 4px 10px;
+    background: #4188e1;
+    color: white;
+  }
+  .abdul-subHeader{
+    color:#4188e1;
+    font-size: larger;
+  }
+  .abdul-subHeaderContent{
+    padding-left:15px;
+  }
+  .abdul-title{
+        padding: 5px 40px 0;
+  }
+  .about-profilePic{
+      width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        border: 1px solid lightgrey;
+    }
+    .about-profileCard{
+      
+        padding: 2rem;
+        
+    }
+    .about-Role{
+          color: darkslategrey;
+          font-size: 14px;
+          font-weight: 350;
+    }
+    .about-aboutMe{
+      color: grey;  
+    }
+    .about-teamName{
+      color: #21225f;
+    }
+
+    .omer-profilelData{
+      margin-top:3px;
+    }
+    .omer-title{
+      font-weight: bold;
+    }
+    .omer-profilePic{
+      height: 15rem;
+    }
+    .omer-personalDetails{
+      margin-top: 20px;
+    }
+    .omer-subHeader{
+      margin-top:5px;
+      font-weight: bold;
+    }
+
+
+  .saud-profilePic{
+    height: 13rem;
+    border-radius: 50%;
+  }
+  .saud-subHeader{
+    margin-top:5px;
+    font-weight: bold;
+  }
+  .saud-bigFont{
+    font-size:larger;
+  }
+
+  .praveen-profilePic{
+      width: 10rem;
+        height: 10rem;
+        margin-top:3rem;
+        border-radius: 50%;
+        border: 1px solid lightgrey;
+    }
+    .praveen-profileCard{
+      
+        padding: 2rem;
+        
+    }
+    
+    .praveen-subHeading{
+      
+      text-transform: uppercase;
+    }
+    
+    .praveen-techIcon{
+      height: 4rem;
+      margin:18px;
+    }
+    .praveen-date{
+      font-size: large;
+        margin-top: 20px;
+        color: #2c5ca5;
+    }
+    .actionBtns{
+      text-align: right;
+      display: none;
+    }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homiez | Login</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/styles.css" rel="stylesheet">
+    <!--//menu-->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/app.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.loadTemplate-0.4.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/utils/util.js"></script>
+    <script type="text/javascript" src="js/apis/app.js"></script>
+    
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		renderUserConversations();
+		});
+    </script>
+
+    <script type="text/html" id="msg-template">
+	   	<div  class='container-msg container-msg-users' onclick="loadConversation(this)">
+	   		<div class="row">
+	   			<div class="col-sm-2 col-md-2 col-lg-2"><img data-src='image' alt='Avatar'></div>
+
+	   			<div class="col-sm-10 col-md-10 col-lg-10" >
+	   				<div class="row">
+	   					<div class="col-sm-7 col-md-7 col-lg-7" style="padding-right:0px;">
+			   				<div class='msg-name-heading sender-name textOverflow' data-content='Name'></div>
+			   			</div>
+			   			<div class="col-sm-5 col-md-5 col-lg-5" style="padding:0px;">
+			   				<div class='chatDateTime' data-content='MsgDate'></div>
+			   			</div>
+	   				</div>
+	   				<div>
+	   					<div class='msg-text' data-content='MessageText'></div>
+	   				</div>
+	   				
+	   			</div>
+	   		</div>
+		  	<span class="con-id" style="display: none;" data-content='ConversationID'></span>
+		  	<span class="user-id" style="display: none;" data-content='UserId'></span>
+		</div>
+	</script>
+
+	<script type="text/html" id="msg-template-receiver">
+	   <div class="container-msg container-msg-thread">
+
+	   		<div class="row">
+	   			<div class="col-sm-1 col-md-1 col-lg-1" style="padding-right:0px;">
+	   				<img style="margin:0px 0px 0px 15px;" data-src='SenderImage' alt="Avatar">
+	   			</div>
+
+	   			<div class="col-sm-9 col-md-9 col-lg-9" style="padding-left:0px;">
+	   				<div class="receiver-message">
+		   				<div class='conversation-message' data-content='MessageText'></div>
+		   				<div class='chatDateTimeReceiver' data-content='MsgDate'></div>
+	   				</div>	
+	   			</div>
+	   			<div class="col-sm-2 col-md-2 col-lg-2"></div>
+	   		</div>
+
+			<!-- <img data-src='SenderImage' alt="Avatar">
+	  		<p data-content='MessageText'></p>
+	  		<span class="time-left" data-content='MsgDate'></span> -->
+			
+	   </div>
+	</script>
+
+	<script type="text/html" id="msg-template-sender">
+	   <div  class='container-msg container-msg-thread'>
+
+		   	<div class="row">
+	   			<div class="col-sm-2 col-md-2 col-lg-2"></div>
+	   			<div class="col-sm-9 col-md-9 col-lg-9" style="padding-right:0px;">
+	   				<div class="sender-message">
+		   				<div class='conversation-message' data-content='MessageText'></div>
+		   				<div class='chatDateTime time-right' data-content='MsgDate'></div>
+	   				</div>
+	   			</div>
+
+	   			<div class="col-sm-1 col-md-1 col-lg-1" style="padding-left:0px;">
+	   				<img style="margin:0px 0px 0px 15px;" data-src='SenderImage' alt="Avatar">
+	   			</div>
+	   		</div>
+
+
+		  <!-- <img data-src='SenderImage' alt="Avatar" class="right">
+		  <p class="msg-align" data-content='MessageText'></p>
+		  <div data-content='MsgDate' class="time-right"></div> -->
+		  
+		</div>
+	</script> 
+
+</head>
+<body>
+<!--header-->
+	<div id="header-content"></div>
+
+
+
+<div class="" style="padding:0px">
+	
+	<div class="row message-container">
+		<div class="col-sm-3 col-md-3 col-lg-3 message-leftCol">
+			<div class="leftCol-header">Messages</div>
+			<div class="user-names">
+				<div id="conversation-container">
+			</div>
+			</div>
+			
+		</div>
+		<div class="col-sm-9 col-md-9 col-lg-9 message-rightCol">
+			<div class="rightCol-header msg-list-heading">Conversation</div>
+			<div class="user-messages">
+				
+				<div id="msg-thread-container">
+					</div>
+				
+			</div>
+			
+			<div class="row input-message" style="position: absolute;width: 100%; bottom: 10px">
+				<div class="col-md-11">
+					<input type="text" id="text-msg" class="form-control">
+					<!-- <textarea id="text-msg" class="form-control" rows="1" style="resize: none;"></textarea> -->
+				</div>
+				<div class="col-md-1" style="padding:0px; text-align: center;">
+					
+					<input type="hidden" name="txt-user-id" id="txt-user-id" value="">
+					<input type="button"  name="btn-send-msg" class="btn btn-default" value="Send"  onclick="postMessage()">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<div id="footer-content" style="width: 100%;bottom: 0px;position: fixed;"></div>
+
+</body>
+</html>
